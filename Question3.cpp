@@ -36,7 +36,25 @@ public:
 		return flag;
 	}
 
-	
+	Fraction add(int n, Fraction fra)  //Addition - integer first 
+	{
+
+		int ansNum, ansDenom;
+		ansNum = n*fra.denom + fra.num;
+		ansDenom = fra.denom;
+
+		return Fraction(ansNum, ansDenom);
+	}
+
+	Fraction add(Fraction fra, int n)  //Addition - fraction first 
+	{
+
+		int ansNum, ansDenom;
+		ansNum = n*fra.denom + fra.num;
+		ansDenom = fra.denom;
+
+		return Fraction(ansNum, ansDenom);
+	}
 
 
 };
