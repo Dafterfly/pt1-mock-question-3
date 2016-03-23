@@ -1,8 +1,8 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //                         COMPUTER METHODS 3 PRACTICAL TEST 1 (MOCK)
-// Name:
-// Student No:
-// Date: 
+// Name: Eustacia Rajman
+// Student No: 214514354
+// Date: 23/03/2016
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 #include <iostream>
 
@@ -22,6 +22,22 @@ private:
 	int num;				// numerator;
 	int denom;				// denominator;
 public:
-	Fraction(int n, int d) : num(n), denum(d) { };
+	Fraction(int n, int d) : num(n), denom(d) { };
 	void print() { cout << num << "/" << denom; };
+
+	friend bool operator > (Fraction fra, Fraction fra2)
+	{
+		bool flag = 0;
+		if (fra1.num*f2.denom > fra2.num*f1.denom) // make equivalent fractions
+		{
+			flag = 1;
+			return temp;
+		}
+		return flag;
+	}
+
+	
+
+
 };
+
